@@ -1,8 +1,8 @@
 import time
-from PoseSampler import *
+from pose_sampler import *
 
 num_samples = 100
-dataset_path = '/home/rb/all_files/airsim_datasets/soccer_test'
+dataset_path = '..//..//data'
 
 # check if output folder exists
 if not os.path.isdir(dataset_path):

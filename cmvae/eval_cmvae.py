@@ -12,10 +12,10 @@ import racing_models.cmvae
 import racing_utils
 
 # DEFINE TESTING META PARAMETERS
-data_dir = '/home/rb/all_files/airsim_datasets/soccer_1k'
+data_dir = '../data'
 read_table = True
 latent_space_constraints = True
-weights_path = '/home/rb/all_files/model_outputs/cmvae_con/cmvae_model_40.ckpt'
+weights_path = '../model_outputs/cmvae_con/cmvae_model_40.ckpt'
 
 n_z = 10
 img_res = 64

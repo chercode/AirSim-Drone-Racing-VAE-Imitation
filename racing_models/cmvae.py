@@ -3,11 +3,16 @@ from tensorflow.keras import Model
 from tensorflow.keras.activations import softplus, relu
 from tensorflow.keras.backend import random_normal
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, BatchNormalization, Lambda, Concatenate, Conv2DTranspose, Reshape
-import dronet
-import decoders
-import transformer
+# import dronet
+# from dronet import Dronet
+# import decoders
+# import transformer
 
 # model definition class
+from racing_models import dronet
+from racing_models import decoders, transformer
+
+
 class Cmvae(Model):
     def __init__(self, n_z, gate_dim=4, res=96, trainable_model=True):
         super(Cmvae, self).__init__()
